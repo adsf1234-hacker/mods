@@ -8,7 +8,7 @@ window.onkeydown = function(e) {
 ModAPI.addEventListener("update", () => {
     if (Boolean(pressedKeys[70] === true ? true : false)) {
         ModAPI.displayToChat({
-            msg: ModAPI.getFPS()
+            msg: prompt(ModAPI.getFPS())
         });
     };
 });
